@@ -1,0 +1,20 @@
+#       CSE 3666 Lab 2
+
+        .text
+main:   
+        # use system call 5 to read integer
+        addi    a7, x0, 5
+        ecall
+        addi    s1, a0, 0       # copy to s1
+
+        # TODO
+        # Add you code here
+        #   reverse bits in s1 and save the results in s2
+        #   print s1 in binary, with a system call
+        #   print newline
+        #   print '=' if s1 is palindrome, otherwise print s2 in binary
+        #   print newline
+        
+        # exit
+exit:   addi    a7, x0, 10      
+        ecall
